@@ -1,0 +1,26 @@
+.right{
+    float : right;
+    padding-left:20px;
+    padding-right:80px;
+    margin-left:40px;
+}
+.set {
+    margin-top:20px;
+}
+
+.container {
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle }
+.set1 {
+        margin-top:300px;
+    }
+
+    .main-menu {
+        padding-right: 30px!important;
+    }
+    .main-menu {
+        float: right;
+        padding-right: 60px;
+    }  
+    
