@@ -1,22 +1,52 @@
 @extends('layouts.header')
 @section('main')
-
-
-<div class="container1 main-banner">
-    <div class="brand-title">Register</div>
+</br>
+</br>
+<div class="container1 main-banner" >
+  <div class="brand-title">Student Registration</div>
+    @if($errors->any())
+      <div class="alert alert-danger">
+      <ul>
+            @foreach ($errors->all() as $error)
+              <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+      </div><br />
+    @endif
+    <form method="post" action="{{url('/store')}}">
+    {{ csrf_field() }}   
       <div class="inputs">
-        <label>Name</label>
-        <input type="text" placeholder="Full Name" />
-        <label>Reg_No</label></br>
-        <input type="text" placeholder="20xx/xx/xxx" />
-        <label>Email</label></br>
-        <input type="email" placeholder="examoletest@gmail.com" />
-        <label>Password</label></br>
-        <input type="password" placeholder="Min 6 charcters " />
-        <label>Confirm Password</label></br>
-        <input type="password" placeholder="min 6 charcters" />
-        <button type ="submit">Register</button>
+        <table>
+          <tr>
+            <td class="marg"><label class="marg" for="name"> First Name</label></td>
+            <td class="marg"><input class="marg" type="text" name="firstname" placeholder="First Name" /></td>
+            <td class="marg"><label class="marg" for="name"> Last Name</label></td>
+            <td class="marg"><input class="marg" type="text" name="lastname" placeholder="Last Name" /></td>
+          </tr>
+        </table>
+</br>
+        <table>
+          <tr>
+            <td class="marg2"><label class="marg2" for="reg_no">Reg_No</label></td>
+            <td class="marg2"><input class="marg2" type="text" name="regno" placeholder="20xx/xx/xxx" /></td>
+            <td class="marg2"><label class="marg3" for="name"> Year</label></td>
+            <td class="marg2"><input class="marg2" type="text" name="year" placeholder="Year" /></td>
+          </tr>
+          </table></br>
+          
+          <label for="email">Email</label>
+          <input type="email"  name="email"placeholder="examoletest@gmail.com" /></br>
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="Min 6 charcters " /></br>
+          
+          <button type ="submit">Register</button>
+        
+
      </div>
+ </br>
+     <a href="{{url('/')}}">Back</a> 
+     </form></br>
+                  
    </div>
 </div>
 
