@@ -4,10 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Attendence Managemant System</title> 
-            <link rel ="stylesheet" href="welcome/home.css">
-            <link rel ="stylesheet" href="welcome/template.css">
-            <link rel="stylesheet" href="welcome/fontawesome.css">
-            <link rel="stylesheet" href="welcome/lightbox.css">
+           
+            <link rel ="stylesheet" href="style.css">
+            <link rel ="stylesheet" href="css/form.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+            
             
 <header class="main-header clearfix" role="header">
     <div class="logo">
@@ -18,14 +19,14 @@
       <ul class="main-menu">
         <li><a href="{{url('/')}}">Home</a></li>
         <li><a href="#">About Us</a>
-        <li><a href="{{url('/login')}}">Login</a>
+        <li><a href="{{url('/login')}}"><i class="fa fa-fw fa-user"></i>Login</a>
         </li>
       </ul>
     </nav>
    
   </header>
-        <link rel ="stylesheet" href="css/form.css">
-
-        @yield('main')
 </head>
+<body>
+@yield('main')
+</body>
 </html>
