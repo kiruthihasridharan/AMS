@@ -8,10 +8,10 @@
 }
 body {
   font-family: 'Nunito', sans-serif;
-  background-image: url("images/logo.jpg");
+  background-image: url("images/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: left;
 }
 .sidebar {
   position: fixed;
@@ -345,6 +345,7 @@ a.menu-link { display: none; }
     display: block;
     margin-bottom: 20px;
   }
+
 }
 
 
