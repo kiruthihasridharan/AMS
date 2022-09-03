@@ -33,7 +33,7 @@
   </div>
   <div class="column">
         <div class="card">
-        <img src="images/student.jpg"style="width:100%">
+        <img src="images/attendence.jpg"style="width:100%">
               <div class="container">
                <h4><b>Attendence</b></h4>
                <p>p/a</p>
@@ -43,7 +43,7 @@
 
   <div class="column">
         <div class="card">
-        <img src="images/student.jpg"style="width:100%">
+        <img src="images/complain.jpg"style="width:100%">
               <div class="container">
                <h4><b>Complains</b></h4>
                <p>p/a</p>
