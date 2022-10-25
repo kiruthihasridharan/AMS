@@ -8,7 +8,7 @@
     
   </head>
 
-     <body>        
+           
 <header class="main-header clearfix" role="header">
     <div class="logo" >
       <a href="{{url('/')}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>AMS<em></a>    
@@ -23,10 +23,7 @@
           </nav>
 </br>
 
-<nav id="menu" class="main-nav" role="navigation">
-            <ul class="main-menu">
-           <p>Welcome</p>
-           </ul>
-          </nav>
   
     @yield('main')
+
+</header>

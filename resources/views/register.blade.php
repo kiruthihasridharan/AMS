@@ -38,6 +38,7 @@
           <input type="email"  name="email"placeholder="examoletest@gmail.com" /></br>
           <label for="password">Password</label>
           <input type="password" name="password" placeholder="Min 6 charcters " /></br>
+          <input type="hidden" name="role" value="student" />
           
           <button type ="submit">Register</button>
         

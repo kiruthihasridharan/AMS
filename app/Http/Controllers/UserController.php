@@ -46,6 +46,7 @@ class UserController extends Controller
             'year'=>'required',
             'email'=>'required|email',
             'password'=>'required',
+            'role'=>'required',
 
         ]);
         $stu = new Student([
@@ -55,9 +56,18 @@ class UserController extends Controller
             'year' => $request->get('year'),
             'email' => $request->get('email'),
             'password' => Hash::make($request->get('password')),
-            
+            'role' => $request->get('role'),
         ]);
         $stu->save();
+        $user = new User([
+            'firstname' => $request->get('firstname'),
+            'lastname' => $request->get('lastname'),
+            'email' => $request->get('email'),
+            'password' => Hash::make($request->get('password')),
+            'role' => $request->get('role'),
+        ]);
+        
+        $user->save();
         return redirect('/');
     }
 
