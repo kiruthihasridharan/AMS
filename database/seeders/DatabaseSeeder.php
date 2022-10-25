@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert(['name' => 'Kiruthiha',//Str::random(10),
             'email' => 'Kiruthiha@gmail.com',//Str::random(10).'@gmail.com', 
             'password' => Hash::make('athi98'),
-            
+            //
             'role'=>'admin',  
             'remember_token' => Str::random(10), ]);
              // \App\Models\User::factory(10)->create();
