@@ -27,7 +27,6 @@
         <img src="images/student.jpg"style="width:100%">
               <div class="container">
                <h4><b>Students</b></h4>
-               <p>list</p>
               </div>
          </div>
   </div>
@@ -45,12 +44,21 @@
         <div class="card">
         <img src="images/complain.jpg"style="width:100%">
               <div class="container">
-               <h4><b>Complains</b></h4>
+               <h4><a href ="#"><b>Complains</b></a></h4>
                <p>p/a</p>
               </div>
         </div>
   </div>
 
+  <div class="column">
+        <div class="card">
+        <img src=""style="width:100%">
+              <div class="container">
+               <h4><b>Notice</b></h4>
+               <p>p/a</p>
+              </div>
+        </div>
+  </div>
   
   
 </div>

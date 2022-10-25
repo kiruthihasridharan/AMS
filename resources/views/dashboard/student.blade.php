@@ -2,7 +2,7 @@
 @extends('layouts.studentlayout')
 @section('main')
 
-
+<body> 
     <input type="checkbox" id="check">
     <label for="check">
       <i class="fas fa-bars" id="btn"></i>
@@ -21,6 +21,12 @@
    </div>
    <section>
     
+
+<div class="welcomelabel">
+      <div class="container">
+            <h3>Welcome <div class="namedesign">{{$student->firstname}} {{$student->lastname}}</div></h3>
+      </div>
+</div>
 <div class="row">
   <div class="column">
         <div class="card">
@@ -45,7 +51,7 @@
         <div class="card">
         <img src="images/student.jpg"style="width:100%">
               <div class="container">
-               <h4><b>Complains</b></h4>
+               <h4><a href="{{url('/complain')}}"><b>Complains</b></a></h4>
                <p>p/a</p>
               </div>
         </div>
@@ -53,9 +59,7 @@
 </div>
    </section>
   </body>
-</header>
 
-</html>
 
 @endsection
     
