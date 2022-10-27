@@ -23,7 +23,7 @@
           </nav>
 </header>
 <div class="container1 main-banner" >
-  <div class="brand-title" >Complain Form</div>
+  <div class="brand-title" >Complaint Form</div>
 <form method="post" action="{{url('/complainstore',$student->id)}}">
     {{ csrf_field() }}   
       <div class="inputs">
@@ -36,7 +36,7 @@
 <br>
         <table>
           <tr>
-          <td class="marg"><label class="marg" for="compalin"> Complain</label></td>
+          <td class="marg"><label class="marg" for="compalin"> Complaint</label></td>
           <td class="marg"><input class="marg" type="text" name="complain"/></td>
           </tr>
         </table>
@@ -44,7 +44,7 @@
        <input type="hidden" value="not_reviewed" name="status"/>
         
         <br>
-        <button type ="submit" class="btn btn-outline-info">Add Complain</button>
+        <button type ="submit" class="btn btn-outline-info">Add Complaint</button>
 </form>
 </div>
 </div>

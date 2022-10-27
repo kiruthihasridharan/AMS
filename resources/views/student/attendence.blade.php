@@ -17,7 +17,25 @@
     </ul>
    </div>
 <section>
+<div class="welcomelabel">
+  <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Subject</th>
+      <th scope="col">Attendence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Artificial Intelligent</td>
+      <td>35%</td>
+    </tr>
+</tbody>
+</table>
 
+</div>
 
    </section>
   

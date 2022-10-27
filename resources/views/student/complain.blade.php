@@ -17,7 +17,7 @@
           <nav id="menu" class="main-nav" role="navigation">
             <ul class="main-menu">
             <li><a href="{{url('/home',$student->id)}}">Home</a></li>
-            <li><a href="#">My Profile</a></li>
+            <li><a href="{{url('/myprofile',$student->id)}}">My Profile</a></li>
              <li><a href="{{url('/')}}">logout</a></li>
            </ul>
           </nav>
@@ -39,10 +39,10 @@
    <section>
    <div class="welcomelabel">
       <div class="container">
-         <h4><b text-align="center">Complain Status</b></h4>
+         <h4><b text-align="center">Complaint Status</b></h4>
          </div>
          <br>
-         <a href="{{url('/fcomplain',$student->id)}}" class="btn btn-success">Add Complain</a>
+         <a href="{{url('/fcomplain',$student->id)}}" class="btn btn-success">Add Complaint</a>
 
 <br><br>
 
@@ -52,7 +52,7 @@
     
       <th scope="col">No</th>
       <th scope="col">Date</th>
-      <th scope="col">Complain</th>
+      <th scope="col">Complaint</th>
       <th scope="col">Status</th>
     </tr>
   </thead>

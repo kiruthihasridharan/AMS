@@ -13,7 +13,7 @@
     <ul>
      <li><a href="{{url('/adminhome')}}"><i class="fas fa-qrcode"></i>Dashboard</a></li>
      <li><a href="{{url('/student')}}"><i class="fa fa-user-circle"></i>Students</a></li>
-     <li><a href="{{url('/admincomplain')}}"><i class="far fa-question-circle"></i>Complains</a></li>
+     <li><a href="{{url('/admincomplain')}}"><i class="far fa-question-circle"></i>Complaints</a></li>
      <li><a href="{{url('/')}}"><i class="fa fa-window-close"></i>logout</a></li>
 
     </ul>

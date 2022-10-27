@@ -12,11 +12,35 @@
     <ul>
     <li><a href="{{url('/adminhome')}}"><i class="fas fa-qrcode"></i>Dashboard</a></li>
      <li><a href="{{url('/student')}}"><i class="fa fa-user-circle"></i>Students</a></li>
-     <li><a href="{{url('/admincomplain')}}"><i class="far fa-question-circle"></i>Complains</a></li>
+     <li><a href="{{url('/admincomplain')}}"><i class="far fa-question-circle"></i>Complaints</a></li>
      <li><a href="{{url('/')}}"><i class="fa fa-window-close"></i>logout</a></li>
 
     </ul>
    </div>
+   <section>
+
+   
+   <div class="row">
+  <div class="column">
+        <div class="Acontainer">        
+               <h4><b>3rd Year</b></h4>
+         </div>
+  </div>
+<br>
+  <div class="column">
+        <div class="Acontainer">        
+               <h4><a href="{{url('/semi1')}}"><b>Semester-1</b></a></h4>
+         </div>
+  </div>
+<br>
+  <div class="column">
+        <div class="Acontainer">        
+               <h4><a href="{{url('/semi2')}}"><b>Semester-2</b></a></h4>
+         </div>
+  </div>
+</div>
+  @yield('course1')
+</section>
 
 
 
