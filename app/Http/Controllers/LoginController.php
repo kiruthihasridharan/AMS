@@ -33,9 +33,9 @@ class LoginController extends Controller
         if(Auth::user()->role=='admin')
            return view('dashboard.admin');
         if(Auth::user()->role=='student')
-           return view('dashboard.student');
+           return view('dashboard.student',compact('student'));
        }
-       else if($student != null)
+      /* else if($student != null)
        {
          if(Hash::check($user_data['password'],$student->password))
          {
@@ -44,7 +44,7 @@ class LoginController extends Controller
           else{
             return back()->with('error','wrong pw');
          }
-       }
+       }*/
        else{
         return back()->with('error','Wrong Login Details');
        }
