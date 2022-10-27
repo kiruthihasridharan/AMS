@@ -111,7 +111,23 @@ class AdminController extends Controller
         return view('admin.attendence');
     }
 
+    
+    public function semi1()
+    {
+        $courses = Course ::where('semester','=',1)->get();
+        return view('admin.sem',compact('courses'));
+    }
 
+    public function semi2()
+    {
+        $courses = Course ::where('semester','=',2)->get();
+        return view('admin.sem',compact('courses'));
+    }
+    public function m_attendence()
+    {
+        $students = Student ::all();
+        return view('admin.markattendence',compact('students'));
+    }
 
     }
 

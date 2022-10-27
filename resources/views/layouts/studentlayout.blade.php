@@ -17,7 +17,7 @@
           <nav id="menu" class="main-nav" role="navigation">
             <ul class="main-menu">
             <li><a href="{{url('/home',$student->id)}}">Home</a></li>
-             <li><a href="#">My Profile</a></li>
+             <li><a href="{{url('/myprofile',$student->id)}}">My Profile</a></li>
              <li><a href="{{url('/')}}">logout</a></li>
            </ul>
           </nav>
