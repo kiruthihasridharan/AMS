@@ -11,11 +11,10 @@
     <div class="sidebar">
     <header>AMS</header>
     <ul>
-     <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
-     <li><a href="#"><i class="fa fa-user-circle"></i>Students</a></li>
-     <li><a href="#"><i class="far fa-question-circle"></i>Complains</a></li>
-     <li><a href="#"><i class="fas fa-lock"></i>Reset Password</a></li>
-     <li><a href="#"><i class="fa fa-window-close"></i>logout</a></li>
+     <li><a href="{{url('/adminhome')}}"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+     <li><a href="{{url('/student')}}"><i class="fa fa-user-circle"></i>Students</a></li>
+     <li><a href="{{url('/admincomplain')}}"><i class="far fa-question-circle"></i>Complains</a></li>
+     <li><a href="{{url('/')}}"><i class="fa fa-window-close"></i>logout</a></li>
 
     </ul>
    </div>
@@ -26,44 +25,38 @@
         <div class="card">
         <img src="images/student.jpg"style="width:100%">
               <div class="container">
-               <h4><b>Students</b></h4>
+               <h4><a href ="{{url('/student')}}"><b>Students</b></h4>
               </div>
          </div>
   </div>
+
   <div class="column">
         <div class="card">
-        <img src="images/attendence.jpg"style="width:100%">
+        <img src="images/attendence.png"style="width:100%">
               <div class="container">
-               <h4><b>Attendence</b></h4>
-               <p>p/a</p>
+               <h4><a href ="{{url('/adminattendence')}}"><b>Attendence</b></h4>
               </div>
         </div>
   </div>
 
   <div class="column">
         <div class="card">
-        <img src="images/complain.jpg"style="width:100%">
+        <img src="images/complain.png"style="width:100%">
               <div class="container">
-               <h4><a href ="#"><b>Complains</b></a></h4>
-               <p>p/a</p>
+               <h4><a href ="{{url('/admincomplain')}}"><b>Complains</b></a></h4>
               </div>
         </div>
   </div>
 
   <div class="column">
         <div class="card">
-        <img src=""style="width:100%">
+        <img src="images/notice.png"style="width:100%">
               <div class="container">
-               <h4><b>Notice</b></h4>
-               <p>p/a</p>
+               <h4><a href ="{{url('/adminnotice')}}"><b>Notice</b></h4>
               </div>
         </div>
-  </div>
-  
-  
+   </div>
 </div>
-
-
    </section>
   </body>
 </header>

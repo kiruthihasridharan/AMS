@@ -17,14 +17,15 @@
     
           <nav id="menu" class="main-nav" role="navigation">
             <ul class="main-menu">
-            <li><a href="{{url('/home',$student->id)}}">Home</a></li>
+            <li><a href="{{url('/adminhome')}}">Home</a></li>
+            <li><a href="#">My Profile</a></li>
              <li><a href="{{url('/')}}">logout</a></li>
            </ul>
           </nav>
 </header>
 <div class="container1 main-banner" >
-  <div class="brand-title" >Complain Form</div>
-<form method="post" action="{{url('/complainstore',$student->id)}}">
+  <div class="brand-title" >Notice Form</div>
+<form method="post" action="{{url('/noticestore')}}">
     {{ csrf_field() }}   
       <div class="inputs">
         <table>
@@ -36,15 +37,19 @@
 <br>
         <table>
           <tr>
-          <td class="marg"><label class="marg" for="compalin"> Complain</label></td>
-          <td class="marg"><input class="marg" type="text" name="complain"/></td>
+          <td class="marg"><label class="marg" for="courseunit">Course unit</label></td>
+          <td class="marg"><input class="marg" type="text" name="courseunit"/></td>
           </tr>
         </table>
-
-       <input type="hidden" value="not_reviewed" name="status"/>
-        
         <br>
-        <button type ="submit" class="btn btn-outline-info">Add Complain</button>
+        <table>
+          <tr>
+          <td class="marg"><label class="marg" for="information">Information</label></td>
+          <td class="marg"><input class="marg" type="text" name="information"/></td>
+          </tr>
+        </table>
+        <br><br>
+        <button type ="submit" class="btn btn-outline-info">Display</button>
 </form>
 </div>
 </div>

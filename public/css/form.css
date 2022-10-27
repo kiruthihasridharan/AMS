@@ -52,6 +52,10 @@ body{
 .marg3 {
   margin-right:50px;
 }
+.marg4 {
+  margin-right:600px;
+  height:300px;
+}
 .back{
   color: white;
   margin-top: 30px;
@@ -71,6 +75,7 @@ body{
     font-size: 1.8rem;
     color: rgba(22,34,57,0.99);
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .inputs{

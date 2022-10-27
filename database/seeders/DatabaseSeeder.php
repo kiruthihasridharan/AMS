@@ -31,6 +31,20 @@ class DatabaseSeeder extends Seeder
              //'gender'=>'female',
              'role'=>'student',  
              'remember_token' => Str::random(10), ]);
+
+
+             DB::table('courses')->insert(['semester' => 1,//Str::random(10),
+             'courseunit' => 'CSC301S3',//Str::random(10),
+             'coursename' => 'Rapid Application Development',]);
+
+
+             DB::table('courses')->insert(['semester' => 2,//Str::random(10),
+             'courseunit' => 'CSC311S3',//Str::random(10),
+             'coursename' => 'Machine Learning',]);
     }
+
+
+
+
 }
 
