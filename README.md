@@ -12,4 +12,5 @@ email :nahi@gmail.com
 Password : nahi001
 
 Database Name - "ams"
+ams.sql file included in sql folder
 
