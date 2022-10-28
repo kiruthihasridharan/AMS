@@ -10,7 +10,7 @@ class Attendence extends Model
     use HasFactory;
 
     protected $fillable = [
-        'Date',
+        //'Date',
         'semester',
         'courseunit',
         'regno',

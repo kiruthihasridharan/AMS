@@ -51,3 +51,4 @@ Route::get('/adminattendence',[AdminController::class,'adminattendence']);
 Route::get('/m_attendence',[AdminController::class,'m_attendence']);
 Route::get('/semi1',[AdminController::class,'semi1']);
 Route::get('/semi2',[AdminController::class,'semi2']);
+Route::post('/s_attendence',[AdminController::class,'s_attendence']);

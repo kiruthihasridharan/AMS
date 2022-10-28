@@ -17,8 +17,7 @@
     
     <nav id="menu" class="main-nav" role="navigation">
             <ul class="main-menu">
-            <li><a href="#">Home</a></li>
-             <li><a href="#">My Profile</a></li>
+            <li><a href="{{url('/adminhome')}}">Home</a></li>
              <li><a href="{{url('/')}}">logout</a></li>
            </ul>
           </nav>
@@ -56,9 +55,8 @@
         
 
      </div>
- </br>
-     <a href="{{url('#')}}">Back</a> 
-     </form></br>
+ 
+     </form>
 </div>
 </div>
 </body>

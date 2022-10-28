@@ -1,5 +1,6 @@
 @extends('layouts.adminlayout')
 @section('main')
+<link rel ="stylesheet" href="/switch.css">
 <link rel="stylesheet" href="{{ asset('https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css')}}" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <input type="checkbox" id="check">
     <label for="check">
@@ -17,6 +18,8 @@
     </ul>
    </div>
    <section>
+   <form method="post" action="{{ url('/s_attendence') }}"> 
+          {{ csrf_field() }}
    <div class="welcomelabel">
       <div class="container">
          <h4><b text-align="center">Mark Attendence</b></h4>
@@ -44,13 +47,25 @@
     <tr>
       <th scope="row">{{++$i}}</th>
       <td>{{$student->regno}}</td>
-      <td>present</td>
+      <td>
+        
+     
+      <label class="switch">
+     <input type="checkbox" value="present" name="attendence"/>
+              <span class="slider round"></span>
+     </label>
+
+
+      </td>
     </tr>
   @endforeach
 </tbody>
 </table>
 
 </div>
+
+<button type ="submit" class="btn btn-outline-info">Save</button></a>
+</form>
    </section>
   </body>
 </header>
