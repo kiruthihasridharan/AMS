@@ -12,7 +12,7 @@
     <header>AMS</header>
     <ul>
     <li><a href="{{url('/home',$student->id)}}"><i class="fas fa-qrcode"></i>Dashboard</a></li>
-     <li><a href="#"><i class="fas fa-lock"></i>Reset Password</a></li>
+     <li><a href="{{url('/reset',$student->id)}}"><i class="fas fa-lock"></i>Reset Password</a></li>
      <li><a href="{{url('/')}}"><i class="fa fa-window-close"></i>logout</a></li>
 
     </ul>
