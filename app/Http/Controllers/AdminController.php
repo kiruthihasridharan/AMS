@@ -11,6 +11,7 @@ use\App\Models\Student;
 use\App\Models\Complain;
 use\App\Models\Notice;
 use\App\Models\Course;
+use\App\Models\Attendence;
 
 class AdminController extends Controller
 {
@@ -127,6 +128,24 @@ class AdminController extends Controller
     {
         $students = Student ::all();
         return view('admin.markattendence',compact('students'));
+    }
+
+    public function s_attendence( Request $request , Student $student )
+    {
+        $request->validate([
+            'attendence'=>'required',
+       ]);
+       $attendence = new Attendence([
+        
+        //'Date' => $request->get('Date'),
+        'attendence'=>$request->get('attendence'),
+
+       
+
+     ]);
+     $attendence->save();
+     $attendence =  Attendence::all();
+        return view('admin.markattendence',compact('student','attendence'));
     }
 
     }

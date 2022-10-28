@@ -28,7 +28,7 @@
 <div class="row">
   <div class="column">
         <div class="card">
-        <img src="/images/student.jpg"style="width:100%">
+        <img src="/images/course.png"style="width:100%">
               <div class="container">
                <h4><a href="{{url('/course',$student->id)}}"><b>Course</b></h4>
               </div>

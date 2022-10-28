@@ -26,12 +26,22 @@
       <th scope="col">Attendence</th>
     </tr>
   </thead>
+
+           @php
+            $i=0;
+            @endphp
+
+
   <tbody>
+  @foreach($courses as $course)
     <tr>
-      <th scope="row">1</th>
-      <td>Artificial Intelligent</td>
-      <td>35%</td>
+    
+      <th scope="row">{{++$i}}</th>
+      <td>{{$course->coursename}}</td>
+      <td>{{35+$i}}%</td>
+      
     </tr>
+    @endforeach
 </tbody>
 </table>
 

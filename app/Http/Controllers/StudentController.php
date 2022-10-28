@@ -28,8 +28,8 @@ class StudentController extends Controller
        
     public function attendence(Student $student)
     {
-        //$complains =  Complain::all();
-        return view('student.attendence',compact('student'));
+        $courses =  Course::all();
+        return view('student.attendence',compact('student','courses'));
     } 
     public function fcomplain(Student $student)
     {

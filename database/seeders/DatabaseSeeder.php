@@ -24,19 +24,28 @@ class DatabaseSeeder extends Seeder
             'role'=>'admin',  
             'remember_token' => Str::random(10), ]);
              // \App\Models\User::factory(10)->create();
-        DB::table('users')->insert(['firstname' => 'Thulakshan',//Str::random(10),
-             'lastname' => 'Pandy',//Str::random(10),
-             'email' => 'Thulu@gmail.com',//Str::random(10).'@gmail.com', 
-             'password' => Hash::make('thulu98'),
-             //'gender'=>'female',
-             'role'=>'student',  
-             'remember_token' => Str::random(10), ]);
-
-
+       
              DB::table('courses')->insert(['semester' => 1,//Str::random(10),
              'courseunit' => 'CSC301S3',//Str::random(10),
              'coursename' => 'Rapid Application Development',]);
 
+             DB::table('courses')->insert(['semester' => 1,//Str::random(10),
+             'courseunit' => 'CSC303S3',//Str::random(10),
+             'coursename' => 'Data Communication and Computer Networks ',]);
+
+             
+             DB::table('courses')->insert(['semester' => 1,//Str::random(10),
+             'courseunit' => 'CSC305S3',//Str::random(10),
+             'coursename' => 'Graphics and visual Computing ',]);
+
+
+             DB::table('courses')->insert(['semester' => 2,//Str::random(10),
+             'courseunit' => 'CSC308S3',//Str::random(10),
+             'coursename' => 'Artificial Intelligence',]);
+
+             DB::table('courses')->insert(['semester' => 2,//Str::random(10),
+             'courseunit' => 'CSC309S3',//Str::random(10),
+             'coursename' => 'High Performance Computing',]);
 
              DB::table('courses')->insert(['semester' => 2,//Str::random(10),
              'courseunit' => 'CSC311S3',//Str::random(10),
