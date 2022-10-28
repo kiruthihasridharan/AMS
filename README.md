@@ -1,7 +1,6 @@
 ATTENDENCE MANGAMENT SYSTEM
 
             .....Login Details.....
-
 "Admin"
 
 email : Kiruthiha@gmail.com    [NOTE :'K' is capital]
