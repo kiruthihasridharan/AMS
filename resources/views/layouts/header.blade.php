@@ -18,7 +18,7 @@
     <nav id="menu" class="main-nav" role="navigation">
       <ul class="main-menu">
         <li><a href="{{url('/')}}">Home</a></li>
-        <li><a href="#">About Us</a>
+        <li><a href="{{url('/aboutus')}}">About Us</a>
         <li><a href="{{url('/login')}}"><i class="fa fa-fw fa-user"></i>Login</a>
         </li>
       </ul>

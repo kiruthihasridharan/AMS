@@ -22,18 +22,10 @@
            </ul>
           </nav>
 </header>
-<div class="container1 main-banner" >
-  <div class="brand-title" >Reset Password</div>
-<form method="post" action="{{url('/changepw',$student->id)}}">
-    {{ csrf_field() }}   
-    <div class="inputs">
-        <label for="password">New Password</label></br>
-        <input type="password" name ="password" placeholder="Enter the new password" /> </br>
-        <label for="password">Confirm Password</label></br>
-        <input type="password" name ="re-password" placeholder="Re-enter the new password" /> 
-        <br>
-        <button type ="submit" class="btn btn-outline-info">Reset</button>
-     </div> 
+<div>
+                <h4 color="white"> Please contact your system administrator</h4>
+             </div>
+
 </form>
 </div>
 </div>
