@@ -21,6 +21,11 @@ class UserController extends Controller
         return view('register');
     }
 
+    public function aboutus()
+    {
+        return view('aboutus');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

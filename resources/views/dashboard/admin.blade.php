@@ -43,7 +43,7 @@
         <div class="card">
         <img src="images/complain.png"style="width:100%">
               <div class="container">
-               <h4><a href ="{{url('/admincomplain')}}"><b>Complains</b></a></h4>
+               <h4><a href ="{{url('/admincomplain')}}"><b>Complaints</b></a></h4>
               </div>
         </div>
   </div>
