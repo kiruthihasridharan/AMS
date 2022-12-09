@@ -12,7 +12,7 @@
  
   @foreach($courses as $course)
     <tr>
-      <td><a href ="{{url('/m_attendence')}}">{{$course->courseunit}}</a></td>
+      <td><a href ="{{url('/m_attendence',$course->id)}}">{{$course->courseunit}}</a></td>
       <td><a href ="{{url('/m_attendence')}}">{{$course->coursename}}</a></td>
 
     </tr>

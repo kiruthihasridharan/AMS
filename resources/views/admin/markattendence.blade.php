@@ -17,9 +17,11 @@
 
     </ul>
    </div>
+ 
    <section>
-   <form method="post" action="{{ url('/s_attendence') }}"> 
-          {{ csrf_field() }}
+   <!--<form method="post" action="{{ url('/s_attendence') }}"> 
+          {{ csrf_field() }}-->
+         
    <div class="welcomelabel">
       <div class="container">
          <h4><b text-align="center">Mark Attendence</b></h4>
@@ -30,6 +32,8 @@
 
   <table class="table table-hover">
   <thead>
+    <td class="marg" ><label class="marg" for="Date" > Date</label></td> 
+    <td class="marg"><input class="marg" type="date" name="Date" /></td>  
     <tr>
     
       <th scope="col">No</th>
@@ -51,11 +55,12 @@
         
      
       <label class="switch">
+     <!--<input type="checkbox" value="present" name="attendence"/>-->
      <input type="checkbox" value="present" name="attendence"/>
-              <span class="slider round"></span>
-     </label>
-
-
+      <span class="slider round"></span>
+    </label>
+              <button type="submit">Mark</button>
+     
       </td>
     </tr>
   @endforeach
@@ -63,9 +68,12 @@
 </table>
 
 </div>
-
+<div class="btn btn-outline-info">
+<a href="{{url('/adminhome')}}"></i>Save</a></li>
+</div>
+<!--
 <button type ="submit" class="btn btn-outline-info">Save</button></a>
-</form>
+</form>-->
    </section>
   </body>
 </header>

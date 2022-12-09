@@ -124,13 +124,13 @@ class AdminController extends Controller
         $courses = Course ::where('semester','=',2)->get();
         return view('admin.sem',compact('courses'));
     }
-    public function m_attendence()
+    public function m_attendence(Course $course)
     {
         $students = Student ::all();
-        return view('admin.markattendence',compact('students'));
+        return view('admin.markattendence',compact('students','course'));
     }
 
-    public function s_attendence( Request $request , Student $student )
+    public function s_attendence( Request $request , Student $student, Course $course)
     {
         $request->validate([
             'attendence'=>'required',
@@ -147,6 +147,22 @@ class AdminController extends Controller
      $attendence =  Attendence::all();
         return view('admin.markattendence',compact('student','attendence'));
     }
-
+    public function st_attendence(Student $student)
+    {
+        $attendence = new Attendence;
+        $attendence->semester='1';
+        $attendence->courseunit='CSC301S3';
+        $attendence->regno='2018/CSC/003';
+        $attendence->attendence='present';
+        
+            //'Date' => $request->get('Date'),
+        //'attendence'=>$request->get('attendence')
+     
+        $attendence->save();
+        $attendence =  Attendence::all();
+        $students=Student::all();
+        return view('admin.markattendence',compact('students','attendence','student'));
     }
+
+}
 
