@@ -26,17 +26,26 @@ class DatabaseSeeder extends Seeder
              // \App\Models\User::factory(10)->create();
        
              DB::table('courses')->insert(['semester' => 1,//Str::random(10),
-             'courseunit' => 'CSC301S3',//Str::random(10),
+             'courseunit' => 'CSC301G3',//Str::random(10),
              'coursename' => 'Rapid Application Development',]);
 
              DB::table('courses')->insert(['semester' => 1,//Str::random(10),
-             'courseunit' => 'CSC303S3',//Str::random(10),
+             'courseunit' => 'CSC302G3',//Str::random(10),
              'coursename' => 'Data Communication and Computer Networks ',]);
 
              
              DB::table('courses')->insert(['semester' => 1,//Str::random(10),
-             'courseunit' => 'CSC305S3',//Str::random(10),
+             'courseunit' => 'CSC303G3',//Str::random(10),
              'coursename' => 'Graphics and visual Computing ',]);
+
+             
+             DB::table('courses')->insert(['semester' => 1,//Str::random(10),
+             'courseunit' => 'CSC304G3',//Str::random(10),
+             'coursename' => 'Computer Programming-III ',]);
+
+             DB::table('courses')->insert(['semester' => 1,//Str::random(10),
+             'courseunit' => 'CSC305G3',//Str::random(10),
+             'coursename' => 'Team Software Project ',]);
 
 
              DB::table('courses')->insert(['semester' => 2,//Str::random(10),

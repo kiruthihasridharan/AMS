@@ -37,7 +37,7 @@
 
         <div class="video-overlay header-text">
           <div class="caption">
-              <h2><em>aboutus</em></h2></br></br></br></br></br></br></br></br>
+              <h2><em>about us</em></h2></br></br></br></br></br></br></br></br></br></br></br></br>
               <div class="caption">
                 <h6>Attendance Management System is software developed for daily student attendance in Department of Computer Science. It makes it easier to access a student's attendance records for a specific semester. The information is sorted by the admin, which will be provided by the staffs for a particular class. This system will also help in evaluating attendance eligibility criteria of a student.
                  </h6>
